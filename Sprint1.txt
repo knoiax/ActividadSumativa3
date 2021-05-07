@@ -1,0 +1,118 @@
+Sprint 1:
+
+=====================
+Daily Scrum
+=====================
+
+Se realiza reunión para definir los roles del equipo (unipersonal) el trabajo tomo menos de 5 minutos.
+Se entrega status de tareas a realizar por parte del equipo el día de hoy (04-05-2021)
+Se buscan soluciones a la problematica a desarrollar incluyendo implementacion de bootstrapp 
+
+====================================================================================
+Historia de usuario: - crear la pagina con todos sus componentes.
+====================================================================================
+
+YO: como Cliente
+
+Quiero: Construir un sitio web para una tienda virtual.. 
+	con formulario de registro de usuarios
+	Implemente la página para que muestre los productos con su nombre, precio y características
+	principales.
+	Realizar la búsqueda de un producto por categoría.
+	Crear Componente de estado del carrito de compras para la tienda virtual.
+	Realizar el CRUD para los artículos del carrito de compras para eliminar y actualizar productos.
+	Generar el resumen de la orden de compra, indicando la cantidad de producto y el precio a pagar.
+
+PARA: 	implementar en un sitio web (figurativo)
+
+=====================
+Product Backlog: 
+=====================
+
+Desarrollo de multipaginacion con barra de navegacion integrada
+responsable: Raúl Farías - 
+		Página para formulario clientes - Completado 60%
+		Página para formulario productos - Completado 100%
+		Página para formulario ventas - Completado 10%	
+		Página para formulario categoría - Completado 100%
+		Página para formulario Administradores - Completado 50%	
+		Pagina para entidad selecciones	(relacion: cliente - venta - producto) - Completado 30%
+		Pagina para entidad roles completado un 0%
+		
+
+Implementar página para que muestre listado de productos
+responsable: Raúl Farías -
+		Completado un 60% - No accedia en ningun periodo de desarrollo a la BD error 403 Forbidden relacionado 
+					con spring security
+
+Almacenamiento en BD
+responsable: Raúl Farías - 
+		Creacion de tablas - Completado un 100% - 
+		Llenado de tablas - completado un 1% (solo mediante consola:-> Insert into roles (nombre) values (ROL_USER),(ROL_ADMIN);)
+
+Valor Agregado
+responsable: Raúl Farías -
+	-	Se intentó mostrar un diseño responsive design (Bootstrap) - Completado un 20% - 
+	-	Se añadieron comentarios en algunos fragmentos de código para informe de errores
+
+
+		
+=============
+Equipo Scrum
+=============
+
+Scrum Master: Raul Farías
+________________________________
+Equipo de desarrollo: Raul Farías
+
+====================
+Sprint Planning
+====================
+
+Proyecto aplicable a tienda comercial se llevará a cabo en un sprint (teoricamente), 
+con una duración de 14 hrs (aprox) se hará enfoque en la priorización de objetivos según lo
+estipulado en la historia de usuario .
+
+=======================
+Sprint Retrospective
+=======================
+
+Qué ha ido bien: 
+		El tiempo dedicado al avance del proyecto, excediendo con creces lo esperable para este tipo de desarrollo
+		Maven Clean - Los repositorios -la imaginacion del desarrollador para simular el flujo del código 
+		inejecutable
+		
+Qué ha fallado
+	-	Error 403 forbidden principal causante de inutilizacion de BD en el proyecto, no permite ejecución 
+		de pruebas en todas las fases del desarrollo.
+		 
+	-	Las soluciones, se necesitaba una completa dedicacion para analizar el error del codigo, por lo cual el 
+		desarrollo se posponia periodicamente durante todo el tiempo dedicado al proyecto.
+	-	El conocimiento base del equipo de desarrollo, en JPQL, dependencias de paginacion alternativas,
+		y areas de dedicación ajenas al ejercicio mismo por motivos de fuerza mayor.
+	-	No se termino ningun sistema.
+	-	La información en linea era absolutamente deficiente (no es habitual no implementar spring security para no 
+		brindar seguridad al sistema), no se encontro claridad a la hora de desabilitar las funciones principales
+		se habilitaron todas las rutas pero no se pudo acceder a bases de datos de ninguna forma.
+	-	no se pudieron actualizar todas las rutas <a href="#"> y  rutas del desarrollo anterior (clic) windows.onload...
+		ya que el tiempo se dedicó a la busqueda de informacion (principalmente irrelevante para el proyecto)
+	-	La informacion de spring boot, los errores en la página nose reflejaban en la consola (perfectamente funcional)
+	- 	La consola demoraba mucho en crear las tablas many to many y arrojaba muchos warnings al ejecutar el programa
+
+Incidencias	se planeaba cambiar completamente el sistema (eliminar admin fusionandolo con la clase cliente para crear clase User)
+		y optimizar una base de datos con el nuevo modelo relacional pero fué
+		absolutamente imposible, el tiempo dedicado a la 
+		busqueda de soluciones ocupo mas del 85% del tiempo de desarrollo (sin soluciones no se podia 
+		avanzar en ninguna direccion.)
+		Muchos comprobaciones de datos fueron inutilizadas para ver el flujo de la informacion y no se restituyeron a los 
+		velores previos, por falta de tiempo y conocimiento.
+
+Qué se puede mejorar
+	-	El conocimiento del equipo 
+	-	No integrar Spring security hasta la fase final de desarrollo, ya que nisiquiera permitia acceder al modulo 
+		de login.
+	-	El desarrollo de las actividades sumativas debiera ser grupal y las pequeñas actividades de clases debieran 
+		ser la mayoría individuales con posibilidad de debate grupal y brainStorming para potenciar las capacidades 
+		individuales, el conocimiento y la busqueda de soluciones y de esta manera integrar mejor el trabajo de 
+		equipo scrum de desarrollo (aunque parezca todo lo contrario).
+	-	Utilizar la tecnica del divide y venceras.
